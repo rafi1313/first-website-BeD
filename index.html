@@ -4,10 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Selektory CSS</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Source+Code+Pro&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <nav id="start">
+            <a href="#start">Start</a>
+            <a href="">Selektory</a>
+            <a href="">Kontakt</a>
+        </nav>
+        <header>
+        Selektory CSS które trzeba znać
+        </header>
+        <main id="selectors">
+        <div class="selector-desc">
+            <h3>1. *</h3>
+            <p>Symbol gwiazdki wybiera wszystkie elementy na stronie. <br>
+                Wielu deweloperów używa tego triku by wyzerować <i>margin</i> i <i>padding</i>.
+            </p>
+            <div class="example">
+                *{
+                    <br>
+                    margin:0;<br>
+                    padding:0;<br>
+                }
+            </div>
+        </div>
+        <div class="selector-desc">
+                <h3>2. #</h3>
+                <p>Symbol '#'(hash) wybiera element na stronie na podstawie <i>id</i>. <br>
+                    Wielu deweloperów używa tego triku by wyzerować <i>margin</i> i <i>padding</i>.
+                </p>
+                <div class="example">
+                    #container{
+                        <br>
+                        max-width:1200px;<br>
+                        margin:auto;<br>
+                    }
+                </div>
+            </div>
+
+        
+        </main>
+        <footer>
+            &copy Rafał Borkowski 2018
+            <br>
+            borkowski.rafal22@gmail.com
+        </footer>
+    </div>
 </body>
 </html>
