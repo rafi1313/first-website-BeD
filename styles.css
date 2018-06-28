@@ -54,7 +54,10 @@ main{
 }
 .selector-desc h3{
     font-size: 25px;
-}    
+}
+.selector-desc i::before,.selector-desc i::after{
+    content: "'"
+}        
 .example{
     background-color: white;
     font-family: 'Source Code Pro', monospace;

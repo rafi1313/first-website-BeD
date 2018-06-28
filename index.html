@@ -1,58 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Selektory CSS</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Source+Code+Pro&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <nav id="start">
-            <a href="#start">Start</a>
-            <a href="">Selektory</a>
-            <a href="">Kontakt</a>
-        </nav>
-        <header>
-        Selektory CSS które trzeba znać
-        </header>
-        <main id="selectors">
-        <div class="selector-desc">
-            <h3>1. *</h3>
-            <p>Symbol gwiazdki wybiera wszystkie elementy na stronie. <br>
-                Wielu deweloperów używa tego triku by wyzerować <i>margin</i> i <i>padding</i>.
-            </p>
-            <div class="example">
-                *{
-                    <br>
-                    margin:0;<br>
-                    padding:0;<br>
-                }
-            </div>
-        </div>
-        <div class="selector-desc">
-                <h3>2. #</h3>
-                <p>Symbol '#'(hash) wybiera element na stronie na podstawie <i>id</i>. <br>
-                    Wielu deweloperów używa tego triku by wyzerować <i>margin</i> i <i>padding</i>.
-                </p>
-                <div class="example">
-                    #container{
-                        <br>
-                        max-width:1200px;<br>
-                        margin:auto;<br>
-                    }
-                </div>
-            </div>
 
-        
-        </main>
-        <footer>
-            &copy Rafał Borkowski 2018
-            <br>
-            borkowski.rafal22@gmail.com
-        </footer>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Selektory CSS</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Source+Code+Pro&amp;subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <nav id="start">
+                <a href="#start">Start</a>
+                <a href="">Selektory</a>
+                <a href="">Kontakt</a>
+            </nav>
+            <header>
+                Selektory CSS które trzeba znać
+            </header>
+            <main id="selectors">
+                <div class="selector-desc">
+                    <h3>1. *</h3>
+                    <p>Symbol gwiazdki wybiera wszystkie elementy na stronie.
+                        <br> Wielu deweloperów używa tego triku by wyzerować
+                        <i>margin</i> oraz <i>padding</i>.
+                    </p>
+                    <div class="example">
+                        *{
+                        <br> margin:0;
+                        <br> padding:0;
+                        <br> }
+                    </div>
+                </div>
+                <div class="selector-desc">
+                    <h3>2. #X</h3>
+                    <p>Symbol '#'(hash) wybiera element na stronie na podstawie
+                        <i>id</i>.
+                        <br>Zgodnie z zasadą może występować tylko 1 element na stronie o danych <i>id</i>.
+                    </p>
+                    <div class="example">
+                        #container{
+                        <br> max-width:1200px;
+                        <br> margin:auto;
+                        <br> }
+                    </div>
+                </div>
+                <div class="selector-desc">
+                        <h3>3. .X</h3>
+                        <p>Symbol '.'(kropka) jest selektorem klasy, tzn. wybiera elementy na stronie na podstawie atrybutu
+                            <i>class</i>.
+                            <br>
+                        </p>
+                        <div class="example">
+                            .example{
+                            <br> background-color:white;
+                            <br> font-family: 'Source Code Pro', monospace;
+                            <br> }
+                        </div>
+                </div>
+                <div class="selector-desc">
+                        <h3>4. X</h3>
+                        <p>Selektor typu jest jednym z najprostszych.<br>
+                        Pozwala wybierać wszystkie elementy danego typu. W przykładzie poniżej wszystkie znaczniki typu <i>a</i> otrzymają kolor czerwony, a wszystkie elementy<i>div</i> padding równy 10px oraz biały kolor tła .
+                            <br>
+                        </p>
+                        <div class="example">
+                            a{ color:red}<br>
+                            div{<br>
+                            padding:10px<br>
+                            background-color:white;
+                            <br> }
+                        </div>
+                </div>
+                <div class="selector-desc">
+                        <h3>5. X Y</h3>
+                        <p>Jeden z najpopularniejszych selektów: selektor potomka.<br>
+                        Pozwala on na doprecyzowanie docelowego elementu, który chcemy ostylować.<br>
+                        W poniższym przykładzie wszystkim znacznikom <i>a</i> będącym bezpośrednimi potomkami elementów <i>nav</i> zostanie nadana wielkość tekstu 36px oraz dodane zostanie dodane podkreślenie.
+                            <br>
+                        </p>
+                        <div class="example">
+                            nav a{
+                            <br> text-decoration:underline;
+                            <br> font-size: 36px;
+                            <br>}
+                        </div>
+                </div>
+
+            </main>
+            <footer>
+                &copy Rafał Borkowski 2018
+                <br> borkowski.rafal22@gmail.com
+            </footer>
+        </div>
+    </body>
+
 </html>
